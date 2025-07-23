@@ -1,0 +1,52 @@
+INSTALLATION RAPIDE - PROJET EAT&DRINK LARAVEL
+==============================================
+
+PRÉREQUIS :
+- PHP 8.1+ avec extensions : xml, curl, sqlite3, mbstring, openssl
+- Composer
+- Node.js et npm (optionnel)
+
+ÉTAPES D'INSTALLATION :
+
+1. Extraire le projet dans votre répertoire web
+   
+2. Installer les dépendances :
+   composer install
+
+3. Configurer l'environnement :
+   cp .env.example .env
+   php artisan key:generate
+
+4. Créer la base de données :
+   touch database/database.sqlite
+   php artisan migrate --seed
+
+5. Lancer le serveur :
+   php artisan serve
+
+6. Accéder à l'application :
+   http://localhost:8000
+
+COMPTES DE TEST :
+- Admin : admin@eatdrink.com / password123
+- Entrepreneur : jean@boulangerie.com / password123
+- Entrepreneur : pierre@charcuterie.com / password123
+
+DOCUMENTATION COMPLÈTE :
+Consultez GUIDE_INSTALLATION.md pour plus de détails.
+
+STRUCTURE DU PROJET :
+- app/ : Modèles et contrôleurs
+- resources/views/ : Templates Blade
+- database/ : Migrations et base de données
+- routes/web.php : Définition des routes
+
+FONCTIONNALITÉS :
+- Gestion des stands et produits
+- Système d'authentification
+- Interface d'administration
+- Panier de commande interactif
+
+SUPPORT :
+Consultez les logs dans storage/logs/ en cas de problème.
+
